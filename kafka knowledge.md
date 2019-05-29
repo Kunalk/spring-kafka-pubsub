@@ -24,6 +24,8 @@ The offset the ordering of messages as an immutable sequence. Kafka maintains th
 Consumers can read messages starting from a specific offset and are allowed to read from any offset point they choose, allowing consumers to join the cluster at any point in time they see fit. 
 Given these constraints, each specific message in a Kafka cluster can be uniquely identified by a tuple consisting of the message’s topic, partition, and offset within the partition.
 
+![alt text](https://sookocheff.com/post/kafka/kafka-in-a-nutshell/log-anatomy.png)
+
 # Log Anatomy
 Another way to view a partition is as a log. 
 A data source writes messages to the log and one or more consumers reads from the log at the point in time they choose. 
